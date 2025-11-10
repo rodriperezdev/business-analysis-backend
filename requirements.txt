@@ -1,0 +1,24 @@
+# FastAPI and server
+fastapi>=0.115.0
+uvicorn>=0.32.0
+
+# Data validation
+# Using latest versions that have pre-built wheels for Python 3.14
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
+
+# HTTP client for exchange rate API
+httpx>=0.25.0
+
+# CORS support (included in FastAPI but explicit)
+# python-multipart for form data support (if needed)
+
+# Development dependencies (optional)
+# pytest==7.4.3
+# pytest-asyncio==0.21.1
+# httpx==0.25.2
+
+# Note: If you get Rust compilation errors, you have two options:
+# 1. Install Rust from https://rustup.rs/ (recommended for Python 3.14)
+# 2. Use Python 3.11 or 3.12 which have more pre-built wheels available
+
