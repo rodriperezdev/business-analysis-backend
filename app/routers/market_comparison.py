@@ -106,3 +106,4 @@ async def compare_markets(
             detail="Internal server error during market comparison"
         )
 
+

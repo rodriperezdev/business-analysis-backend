@@ -83,3 +83,4 @@ async def scenario_analysis(scenario: ScenarioInput) -> ScenarioResponse:
             detail="Internal server error during scenario analysis"
         )
 
+
