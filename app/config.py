@@ -4,7 +4,7 @@ Handles environment variables, settings, and application configuration.
 """
 
 from pydantic_settings import BaseSettings
-from typing import List
+from typing import List, Optional  # ✅ ADD Optional HERE
 
 
 class Settings(BaseSettings):
@@ -26,7 +26,7 @@ class Settings(BaseSettings):
         "http://localhost:3000",  # Local development
         "http://localhost:3001",  # Alternative local port
     ]
-    cors_origin_regex: Optional[str] = r"https://.*\.vercel\.app"  # ✅ ADD THIS LINE
+    cors_origin_regex: Optional[str] = r"https://.*\.vercel\.app"  # Allow all Vercel deployments
     cors_allow_credentials: bool = True
     cors_allow_methods: List[str] = ["*"]
     cors_allow_headers: List[str] = ["*"]
@@ -42,5 +42,4 @@ class Settings(BaseSettings):
 
 # Global settings instance
 settings = Settings()
-
 
