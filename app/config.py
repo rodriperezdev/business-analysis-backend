@@ -26,6 +26,7 @@ class Settings(BaseSettings):
         "http://localhost:3000",  # Local development
         "http://localhost:3001",  # Alternative local port
     ]
+    cors_origin_regex: Optional[str] = r"https://.*\.vercel\.app"  # ✅ ADD THIS LINE
     cors_allow_credentials: bool = True
     cors_allow_methods: List[str] = ["*"]
     cors_allow_headers: List[str] = ["*"]

@@ -7,3 +7,4 @@ from app.main import app
 # Vercel will use this app instance
 __all__ = ["app"]
 
+
