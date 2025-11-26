@@ -48,6 +48,11 @@ async def root():
         "docs": "/docs",
     }
 
+@app.head("/", tags=["Root"])
+async def root_head():
+    """Root endpoint HEAD request for health checks."""
+    return {}
+
 
 @app.on_event("startup")
 async def startup_event():
